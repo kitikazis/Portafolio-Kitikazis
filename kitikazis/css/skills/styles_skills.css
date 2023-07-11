@@ -1,0 +1,93 @@
+/* Custom Properties */
+:root {
+  /* Colors */
+  --primario: #ca3e47;
+  --primarioOscuro: #8f2d33;
+  --primarioClaro: #e74752;
+  --negro: #17181a;
+  --negroOscuro: #0f0f0f;
+  --grisClaro: #a3a3a3;
+  --gris: #414141;
+  --grisOscuro: #2c2c2c;
+  --cafe: #46342f;
+  --blanco: #ffffff;
+  --linkedin: #0a66c2;
+  --facebook: #2963d8;
+  --whatsapp: #25D366;
+  --html: #f06529;
+  --sass: #cc6699;
+  --css: #007dc6;
+  --javascript: #f0db4f;
+  --api: #a6bcbe;
+  --github: #6e5494;
+  --php: #484C89;
+  --links: #6cc644;
+  
+  /* Fonts */
+  --fuentePrincipal: "Chakra Petch", sans-serif;
+}
+
+/* Globals */
+
+/* Skills */
+.skills {
+  position: relative;
+  background-color: var(--negro) !important;
+  color: var(--blanco); /* Text color */
+}
+
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media (min-width: 576px) {
+  .skills__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .skills__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .skills__grid {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+.tech {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: #ddd4e3;
+  font-weight: bold;
+}
+
+.tech img {
+  min-height: 8rem;
+  max-width: 7rem;
+  object-fit: contain;
+  transition: .2s transform;
+}
+
+.tech img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.habilidad{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+
+  color: #ccd1f7;
+  font-weight: bold;
+}
